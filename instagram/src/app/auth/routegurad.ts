@@ -1,6 +1,5 @@
 
 import { CanActivate} from '@angular/router';
-import { FirebaseAuth} from '@angular/fire/index';
 import { auth } from 'firebase/app';
 
 export class RouteGuard implements CanActivate{

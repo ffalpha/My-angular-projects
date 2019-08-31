@@ -4,16 +4,16 @@
                 <a class="nav-link" routerLinkActive='active'  routerLinkActive='{exact:true}' routerLink="/">Home</a>
               </li>
           <li class="nav-item ">
-            <a class="nav-link" routerLinkActive='active' routerLink="/allposts">All posts</a>
+            <a class="nav-link" routerLinkActive='active' *ngIf="isLoggedIn"routerLink="/allposts">All posts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLinkActive='active'  routerLink="/following">Following</a>
+            <a class="nav-link" routerLinkActive='active' *ngIf="isLoggedIn" routerLink="/following">Following</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  routerLinkActive='active'  routerLink="/favourites">Favourites</a>
+            <a class="nav-link"  routerLinkActive='active' *ngIf="isLoggedIn" routerLink="/favourites">Favourites</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link "  routerLinkActive='active'   routerLink="/myposts">My posts</a>
+            <a class="nav-link "  routerLinkActive='active'  *ngIf="isLoggedIn"  routerLink="/myposts">My posts</a>
           </li>
         </ul>
 

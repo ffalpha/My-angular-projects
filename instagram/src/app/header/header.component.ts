@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { auth } from 'firebase';
+import { auth } from 'firebase/app';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,7 +10,18 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   
+     this.check()
+  }
+
+  check(){
+   /* auth().onAuthStateChanged(userData =>{
+      //Checking we are logged in or not display the header components
+      if(userData && userData.emailVerified){
+        this.isLoggedIn=true;
+      }else{
+         this.isLoggedIn=false;
+      }
+    });*/
   }
 
 }
