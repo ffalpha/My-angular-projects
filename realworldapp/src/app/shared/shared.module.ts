@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
-
+//This moduel usede to share same moduels
 @NgModule({
-  declarations: [],
+  exports: [CommonModule],
   imports: [
     CommonModule
   ]
