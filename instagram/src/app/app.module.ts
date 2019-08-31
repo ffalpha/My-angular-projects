@@ -9,7 +9,11 @@ import { FollowingComponent } from './following/following.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { MyPostsComponent } from './my-posts/my-posts.component';
 import { SignupComponent } from './auth/signup/signup.component';
-import { SignUpComponent } from './auth/sign-up/sign-up.component';
+
+import { LoginComponent } from './auth/login/login.component';
+import { HomeComponent } from './home/home.component';
+import {FormsModule} from '@angular/forms'
+import { RouteGuard } from './auth/routegurad';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,16 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
     FavouritesComponent,
     MyPostsComponent,
     SignupComponent,
-    SignUpComponent
+
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule,
+    //AngularFireModule.initializeApp(environment.firebaseconfig),
   ],
-  providers: [],
+  providers: [RouteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
