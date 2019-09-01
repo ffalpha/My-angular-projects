@@ -6,7 +6,13 @@ import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./example.component.css']
 })
 export class ExampleComponent implements OnInit {
-
+  
+  public names ="Codevolation";
+  public message="Welcome to codevlation";
+  public person ={
+    "firstName" : "John",
+    "lastName" : "Doe"
+  }
   @Input() public parentData;
 
   @Output() public childevent =new EventEmitter();
