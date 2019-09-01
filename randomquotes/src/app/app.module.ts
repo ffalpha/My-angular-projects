@@ -1,22 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {AngularFireModule} from '@angular/fire'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MaterialModule } from './material.module';
-import { CoreModule } from './core/core.module';
-import { environment } from 'src/environments/environment';
+import { QuoteboxComponent } from './quotebox/quotebox.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuoteboxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MaterialModule,
-    CoreModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
