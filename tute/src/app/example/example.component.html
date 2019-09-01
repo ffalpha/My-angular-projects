@@ -1,8 +1,8 @@
 
 <h1 class="text-success" >Hello {{title}}</h1>
- {{parentData}}
-   
+ {{parentData}}<br>
+{{ names | lowercase }}
   <input type="text" [(ngModel)]="name"placeholder="Name">
   {{name}}
-
+ {{ person | json }}
   <button (click)="onfire()">Send data to Parent</button>
