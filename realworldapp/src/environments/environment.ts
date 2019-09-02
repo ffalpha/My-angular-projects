@@ -5,13 +5,7 @@
 export const environment = {
   production: false,
    firebase: {
-    apiKey: "AIzaSyBDObDdps5zxD8xry07AxPqPGKngqIfNa8",
-    authDomain: "realworldapp-d4560.firebaseapp.com",
-    databaseURL: "https://realworldapp-d4560.firebaseio.com",
-    projectId: "realworldapp-d4560",
-    storageBucket: "realworldapp-d4560.appspot.com",
-    messagingSenderId: "789849476389",
-    appId: "1:789849476389:web:8aa048411ffdc7fd"
+    //Your Credintials here
   }
 };
 
